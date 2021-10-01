@@ -1,0 +1,20 @@
+<script setup>
+import { withBase, useData } from 'vitepress'
+const { theme } = useData()
+import ArticleList from '@/components/article/List.vue'
+import Pagination from '@/components/article/Pagination.vue'
+import ArticleTag from '@/components/article/Tag.vue'
+const pageSize = theme.value.pageSize
+let articles = theme.value.articles
+const tag = '{{data.tag}}'
+{{if data.tag !== '全部'}}
+  articles = articles.filter(({ frontMatter: { tags = [] } }) => tags.includes('{{data.tag}}'))
+{{/if}}
+articles = articles.slice({{data.pageSize}} * ({{data.page}} - 1), {{data.pageSize}} * {{data.page}})
+const href = function (page) {
+  return withBase(`/paging/tag/{{data.tag}}/page_${page}.html`)
+}
+</script>
+<article-tag :current-tag="'{{data.tag}}'" />
+<article-list :articles="articles" />
+<pagination :articles="articles" :current-page="{{data.page}}" :page-count="{{data.pageCount}}" :href="href" />

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "types": ["element-plus/global"],
+    "paths": {
+      "@/*": [
+        "docs/*"
+      ],
+      "*": ["/docs/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "dist",
+    "./*.js"
+  ]
+}

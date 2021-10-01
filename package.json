@@ -1,0 +1,118 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@types/node": "^15.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.31.2",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "art-template": "^4.13.2",
+    "autoprefixer": "^10.3.5",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-vue": "^7.18.0",
+    "fs-extra": "^10.0.0",
+    "globby": "11.0.4",
+    "gray-matter": "^4.0.3",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.0.0",
+    "postcss": "^8.3.8",
+    "typescript": "^4.3.5",
+    "unplugin-vue-components": "^0.15.6",
+    "vite-plugin-style-import": "^1.2.1",
+    "vitepress": "^0.19.1"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "element-plus": "^1.1.0-beta.17",
+    "tailwindcss": "^2.2.15"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npx eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "types": {
+        "feat": {
+          "title": "feat",
+          "description": "新功能"
+        },
+        "fix": {
+          "title": "fix",
+          "description": "修复bug"
+        },
+        "style": {
+          "title": "style",
+          "description": "代码格式(不影响代码运行的格式变动，注意不是指 CSS 的修改)"
+        },
+        "refactor": {
+          "title": "refactor",
+          "description": "重构(既不是新增功能，也不是修改 bug 的代码变动)"
+        },
+        "perf": {
+          "title": "perf",
+          "description": "提升性能"
+        },
+        "revert": {
+          "title": "revert",
+          "description": "恢复上一次提交"
+        },
+        "ci": {
+          "title": "ci",
+          "description": "持续集成相关文件修改"
+        },
+        "release": {
+          "title": "release",
+          "description": "发布新版本"
+        },
+        "chore": {
+          "title": "chore",
+          "description": "构建或辅助工具的变动"
+        },
+        "docs": {
+          "title": "docs",
+          "description": "文档"
+        },
+        "test": {
+          "title": "test",
+          "description": "提交测试代码(单元测试，集成测试等)"
+        },
+        "build": {
+          "title": "release",
+          "description": "影响项目构建或依赖项修改"
+        },
+        "init": {
+          "title": "init",
+          "description": "初始提交"
+        }
+      }
+    }
+  }
+}
