@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useData, useRouter } from 'vitepress'
-import { ElPagination } from 'element-plus'
+// import { ElPagination } from 'element-plus'
 const { theme } = useData()
 
 const props = defineProps({
