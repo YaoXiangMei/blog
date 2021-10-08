@@ -4106,6 +4106,11 @@ trim-newlines@^3.0.0:
   resolved "https://registry.nlark.com/trim-newlines/download/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha1-Jgpdli2LdSQlsy86fbDcrNF2wUQ=
 
+ts-md5@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.nlark.com/ts-md5/download/ts-md5-1.2.9.tgz?cache=0&sync_timestamp=1624340827199&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fts-md5%2Fdownload%2Fts-md5-1.2.9.tgz#22c9fd2baafdfdebee1068ff4d2dc215ff51df77"
+  integrity sha1-Isn9K6r9/evuEGj/TS3CFf9R33c=
+
 ts-node@^9:
   version "9.1.1"
   resolved "https://registry.nlark.com/ts-node/download/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"

@@ -6,6 +6,7 @@
 import 'gitalk/dist/gitalk.css'
 import Gitalk from 'gitalk'
 import { onMounted } from 'vue'
+import { Md5 } from 'ts-md5/dist/md5'
 
 onMounted(() => {
   const commentConfig = {
@@ -14,6 +15,7 @@ onMounted(() => {
     repo: 'blog',
     owner: 'YaoXiangMei',
     admin: ['YaoXiangMei'],
+    id: Md5.hashStr('location.href'),
   }
   const gitalk = new Gitalk(commentConfig)
   gitalk.render('gitalk-container')
