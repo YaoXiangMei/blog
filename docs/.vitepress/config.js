@@ -3,7 +3,7 @@ const { genArticlePage } = require('./theme/hooks/genArticlePage')
 const { genArticleTagPage } = require('./theme/hooks/genTagPage')
 
 const config = async function () {
-  const pageSize = 1
+  const pageSize = 3
   await genArticlePage(pageSize)
   await genArticleTagPage(pageSize)
   const articles = await getArticles()

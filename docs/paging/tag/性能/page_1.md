@@ -10,7 +10,7 @@ const tag = '性能'
 
   articles = articles.filter(({ frontMatter: { tags = [] } }) => tags.includes('性能'))
 
-articles = articles.slice(1 * (1 - 1), 1 * 1)
+articles = articles.slice(3 * (1 - 1), 3 * 1)
 const href = function (page) {
   return withBase(`/paging/tag/性能/page_${page}.html`)
 }

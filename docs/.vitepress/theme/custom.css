@@ -25,14 +25,14 @@ a:link {
     text-decoration: none;
 }
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.7rem!important;
 }
 h2 {
-    font-size: 1.125rem;
+    font-size: 1.125rem!important;
     margin-bottom: inherit;
 }
 h3 {
-    font-size: 1rem;
+    font-size: 1rem!important;
 }
 .container {
     max-width: 58rem !important;
@@ -132,9 +132,11 @@ h3 {
         margin-left: 0 !important;
         min-height: calc(100vh - 5rem);
     }
-
+    .content {
+      padding-top: 1rem;
+    }
     .sidebar {
-        display: none;
+        /* display: none; */
         left: auto !important;
         right: 1rem !important;
         border-right: none !important;
