@@ -15,7 +15,7 @@ onMounted(() => {
     repo: 'blog',
     owner: 'YaoXiangMei',
     admin: ['YaoXiangMei'],
-    id: Md5.hashStr('location.href'),
+    id: Md5.hashStr(location.pathname),
   }
   const gitalk = new Gitalk(commentConfig)
   gitalk.render('gitalk-container')

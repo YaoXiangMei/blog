@@ -44,7 +44,7 @@ export default {
     }
 }
 ```
-1. gitalk报Error: Validation Failed的错误，是因为配置的id字段超出了限制，给location.herf用md5转换一下就妥当了
+1. gitalk报Error: Validation Failed的错误，是因为配置的id字段超出了限制，给location.pathname用md5转换一下就妥当了
 ``` js
 import 'gitalk/dist/gitalk.css'
 import Gitalk from 'gitalk'
@@ -58,7 +58,7 @@ onMounted(() => {
     repo: 'blog',
     owner: 'YaoXiangMei',
     admin: ['YaoXiangMei'],
-    id: Md5.hashStr('location.href'),
+    id: Md5.hashStr(location.pathname),
   }
   const gitalk = new Gitalk(commentConfig)
   gitalk.render('gitalk-container')
