@@ -105,9 +105,10 @@ export default {
   ],
 }
 ```
+<comment />
+
 <style scoped>
 ol {
   list-style-type: decimal;
 }
 </style>
-<comment />
