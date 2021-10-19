@@ -6,6 +6,7 @@ tags:
 - vite
 description: 使用vitepress+element-plus+tailwindcss搭建博客
 ---
+# vitepress+element-plus+tailwindcss搭建博客
 ## 使用的技术栈  
 ```
 * vite
@@ -44,7 +45,7 @@ export default {
     }
 }
 ```
-1. gitalk报Error: Validation Failed的错误，是因为配置的id字段超出了限制，给location.pathname用md5转换一下就妥当了
+3. gitalk报Error: Validation Failed的错误，是因为配置的id字段超出了限制，给location.pathname用md5转换一下就妥当了
 ``` js
 import 'gitalk/dist/gitalk.css'
 import Gitalk from 'gitalk'
@@ -108,7 +109,6 @@ export default {
 <comment />
 
 <style scoped>
-ol {
-  list-style-type: decimal;
-}
+@import '@/.vitepress/theme/reset-tailwind'
+
 </style>

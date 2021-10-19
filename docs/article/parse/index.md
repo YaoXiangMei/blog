@@ -149,10 +149,5 @@ JSON.parse(person) // 解析成功
 <comment />
 
 <style scoped>
-ol {
-  list-style-type: decimal;
-}
-li {
-  list-style-type: disc;
-}
+@import '@/.vitepress/theme/reset-tailwind'
 </style>
