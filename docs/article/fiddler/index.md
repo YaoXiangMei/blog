@@ -27,20 +27,20 @@ http://ad.maissy.net/doctor/index.html
 1. 打开fiddler, 工具栏 Tools -> Host Remapping
 2. 设置一下域名映射127.0.0.1:80 ad.maissy.net，然后点击保存（80为本地服务的端口可以省略）  
     <el-image
-    class="w-6/12"
+    class="w-6/12 mt-2"
     src="https://ad.qiniu.huishimed.com/1633937684363.png"
     :preview-src-list="['https://ad.qiniu.huishimed.com/1633937684363.png']">
     </el-image>
 3. pc打开远程地址http://ad.maissy.net/doctor/index.html#/index，显示如下  
     <el-image
-    class="w-6/12"
+    class="w-6/12 mt-2"
     src="https://ad.qiniu.huishimed.com/1633938664731.png"
     :preview-src-list="['https://ad.qiniu.huishimed.com/1633938664731.png']">
     </el-image>
 4. 微信开发者工具同pc端直接打开链接便可（无法抓包的话需要设置下代理，微信开发者工具 -> 设置 -> 代理设置 -> 手动设置代理 -> 127.0.0.1:8888）  
 5. 手机在设置好代理之后打开远程地址http://ad.maissy.net/doctor/index.html#/index，显示如下  
     <el-image
-    class="w-3/12"
+    class="w-3/12 mt-2"
     src="https://ad.qiniu.huishimed.com/1633939383618.jpg"
     :preview-src-list="['https://ad.qiniu.huishimed.com/1633939383618.jpg']">
     </el-image>  
@@ -72,7 +72,7 @@ https://localhost:80/doctor/$1
 5. 微信开发者工具打开远程地址  
 
   <el-image
-  class="w-6/12"
+  class="w-6/12 mb-4"
   src="https://ad.qiniu.huishimed.com/1633941599640.png"
   :preview-src-list="['https://ad.qiniu.huishimed.com/1633941599640.png']">
 </el-image>
@@ -83,7 +83,5 @@ fiddler AutoResponder，用本地文件来替换线上文件，这样我们对�
 <comment />
 
 <style scoped>
-ol {
-  list-style-type: decimal;
-}
+@import '@/.vitepress/theme/reset-tailwind'
 </style>

@@ -8,6 +8,3 @@ p, ol, ul {
 ol {
   list-style-type: decimal;
 }
-li {
-  list-style-type: disc;
-}
