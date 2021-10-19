@@ -1,3 +1,6 @@
+---
+sidebar: false
+---
 <script setup>
 import { withBase, useData } from 'vitepress'
 const { theme } = useData()

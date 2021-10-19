@@ -1,3 +1,6 @@
+---
+sidebar: false
+---
 <script setup>
 import { withBase, useData } from 'vitepress'
 const { theme } = useData()
@@ -10,4 +13,4 @@ const href = function (page) {
 }
 </script>
 <article-list :articles="articles" />
-<pagination :articles="articles" :current-page="1" :page-count="1" :href="href" />
+<pagination :articles="articles" :current-page="1" :page-count="2" :href="href" />
