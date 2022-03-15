@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex items-center space-x-4 pt-4 text-white">
+  <ul class="flex flex-wrap items-center justify-evenly pt-4 text-white">
     <li
       v-for="(item, key) in superTags"
       :key="key"
